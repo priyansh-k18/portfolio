@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
-*{
-  font-family:Outfit;
+@layer components{
+  .card{
+    @apply m-10 rounded-lg bg-white px-6 py-8 shadow-xl ring-1
+    ring-slate-900/5 dark:bg-gray-800 dark:text-white;
+  }
+  
+  .font-ovo {
+    font-family: var(--font-ovo);
+  }
 }

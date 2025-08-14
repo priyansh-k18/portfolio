@@ -7,7 +7,7 @@ const outfit = OutfitFont({
 });
 
 const ovo = OvoFont({
-  variable: "--font-geist-mono",
+  variable: "--font-ovo",
   subsets: ["latin"],
   weight: ["400"],
 });

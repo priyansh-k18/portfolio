@@ -37,9 +37,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
         ${isScroll ? "bg-white/50 backdrop-blur-lg shadow-sm dark:bg-indigo-600/80 dark:shadow-white/20" : "bg-transparent"}`}>
         
         {/* Logo */}
-        <a href="#top">
-          <Image src={isDarkMode ? assets.logo_dark : assets.logo} alt="Logo" className='w-28 cursor-pointer mr-14' />
-        </a>
+       
 
         {/* Desktop Menu */}
         <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "bg-white/50 shadow-sm dark:bg-indigo-600/50 dark:border dark:border-white/50" : "bg-transparent"} `}>

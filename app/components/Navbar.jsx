@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { assets } from '@/assets/assets'
 
@@ -33,14 +33,14 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
       </div>
 
       {/* Navbar */}
-      <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 
+      <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-end relative z-50 
         ${isScroll ? "bg-white/50 backdrop-blur-lg shadow-sm dark:bg-indigo-600/80 dark:shadow-white/20" : "bg-transparent"}`}>
         
         {/* Logo */}
-       
+
 
         {/* Desktop Menu */}
-        <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "bg-white/50 shadow-sm dark:bg-indigo-600/50 dark:border dark:border-white/50" : "bg-transparent"} `}>
+        <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 ${isScroll ? "bg-white/50 shadow-sm dark:bg-indigo-600/50 dark:border dark:border-white/50" : "bg-transparent"} `}>
           <li><a className='font-Ovo' href="#top">Home</a></li>
           <li><a className='font-Ovo' href="#about">About me</a></li>
           <li><a className='font-Ovo' href="#services">Services</a></li>

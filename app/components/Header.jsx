@@ -17,8 +17,7 @@ const Header = ({isDarkMode}) => {
          <h1 className='text-3xl sm:text-6xl lg:text-[66px] font-ovo'>
             Full-Stack Web Developer Based in India.</h1>
             <p className='max-w-2xl mx-auto font-Ovo'>
-                I am a full‑stack web developer from MP, India, building end‑to‑end
-                applications with React, Next.js, Node.js, and MongoDB.
+            Building modern, scalable web applications with a focus on performance, design, and reliability.
             </p>
             <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
                 <a href='#contact'

@@ -15,12 +15,18 @@ function About({isDarkMode}) {
                 <Image src={assets.user_image} alt='user' className='w-full rounded-3xl'/>
             </div>
             <div className='flex-1'>
-                 <p className='mb-10 max-w-2xl font-Ovo'>I am an experienced Frontend Developer with over a decade of professional 
-                    expertise in the field.
-                    Throughout my career,I have had privilege of collaborating
-                     with prestigious organizations,contributing to their
-                    success and growth.
-                 </p>
+            <p className="mb-10 max-w-2xl font-Ovo">
+  I am a passionate Full-Stack Web Developer specializing in building scalable and
+  user-friendly applications using modern technologies like 
+  <span className="font-semibold"> React, Next.js, TypeScript, and PostgreSQL</span>.  
+  Over the years, I have worked on diverse projects ranging from dynamic 
+  frontends to robust backend systems, integrating databases and APIs to deliver 
+  complete end-to-end solutions.  
+  I enjoy solving real-world problems through clean, efficient code and take pride 
+  in crafting digital experiences that balance performance, functionality, 
+  and design.
+</p>
+
                  <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
                      {infoList.map(({icon,iconDark,title,description},index) => (
                       <li className={`border-[0.5px] border-gray-400

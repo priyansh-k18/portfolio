@@ -35,6 +35,14 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import react from './react.png';
+import nextjs from './nextjs.png';
+import ts from './ts.png';
+import tailwind from './tailwindcss.png';
+import nodejs from './nodejs.png';
+import docker from './docker.png';
+import prismaorm from './prismaorm.png';
+import sql from './sql.png';
 
 export const assets = {
     user_image,
@@ -73,13 +81,21 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    react,
+    nextjs,
+    ts,
+    tailwind,
+    nodejs,
+    docker,
+    prismaorm,
+    sql
 };
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'QuickAI- AI SaaS application',
+        description: 'Full-Stack website providing feature like Generate Articles,Generate AI images,Remove Background etc.',
         bgImage: '/work-1.png',
     },
     {
@@ -99,11 +115,58 @@ export const workData = [
     },
 ]
 
+export const ProjectData = [
+    {
+        title:"QuickAI",
+        description:"Full-Stack website providing feature like Generate Articles,Generate AI images,Remove Background etc.",
+        image:'/quickAI.png',
+        liveLink:'https://quick-ai-xdz.vercel.app/',
+        codeLink:'https://github.com/priyansh-k18/QuickAI'
+
+    },
+    {
+        title:"ByteCode",
+        description:"Built a full-stack blogging platform enabling users to create, publish, and explore posts across multiple categories.",
+        image:"/byteCode.png",
+        liveLink:"https://byte-code-tau.vercel.app/",
+        codeLink:"https://github.com/priyansh-k18/bytecode"
+    },
+    {
+        title:"QuickChat",
+        description:"Developed a real-time chat application with user registration, login, and chat room creation",
+        image:"/quickChat.png",
+        liveLink:"https://quick-ai-xdz.vercel.app",
+        codeLink:"https://github.com/priyansh-k18/chat-app"
+    }
+]
+
+
+
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    {
+        icon: assets.nextjs,
+        title: 'Frontend Development',
+        description: 'Creating responsive, high-performance, and SEO-friendly UIs with React, Next.js, and Tailwind CSS.',
+        link: ''
+      },
+      {
+        icon: assets.nodejs,
+        title: 'Backend Development & APIs',
+        description: 'Designing secure REST/GraphQL APIs, authentication systems, and scalable server-side applications.',
+        link: ''
+      },
+      {
+        icon: assets.sql,
+        title: 'Database Design & Management',
+        description: 'Designing and managing relational databases with PostgreSQL and NoSQL databases like MongoDB.',
+        link: ''
+      },
+      {
+        icon: assets.docker,
+        title: 'Deployment & DevOps',
+        description: 'Containerization with Docker, CI/CD setup, and deploying applications on Vercel, Render, or AWS.',
+        link: ''
+      },
 ]
 
 export const infoList = [
@@ -113,5 +176,5 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.react, assets.nextjs, assets.ts, assets.tailwind, assets.nodejs, assets.mongodb,assets.docker,assets.git,assets.vscode,assets.sql
 ];

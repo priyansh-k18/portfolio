@@ -1,6 +1,8 @@
 import React from 'react'
-import { assets, workData } from '@/assets/assets'
+import { assets, ProjectData, workData } from '@/assets/assets'
 import Image from 'next/image'
+
+import Projects from './Projects'
 
 function Work({isDarkMode}) {
   return (
@@ -9,14 +11,14 @@ function Work({isDarkMode}) {
         My portfolio
       </h4>
       <h2 className='text-center text-5xl font-Ovo'>
-        My latest work
+        My latest Project
       </h2>
       <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
         Welcome to my web development portfolio! Explore a collection of projects showcasing
         my expertise in front-end development.
       </p>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-10 gap-5'>
+      {/* <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-10 gap-5'>
        {workData.map((project, index) => (
         <div key={index} 
         className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative
@@ -36,7 +38,15 @@ function Work({isDarkMode}) {
            </div>
         </div>
        ))}
-      </div>
+      </div> */}
+       {
+        ProjectData.map((project,index) => (
+          <div key={index}>
+              <Projects title={project.title} description={project.description} image={project.image}
+               liveLink={project.liveLink} codeLink={project.codeLink} reverse={index%2 !== 0}/>
+          </div>
+        ))
+       }
     </div>
   )
 }
